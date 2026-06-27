@@ -27,7 +27,7 @@ This is the **full board** - it can pull advisors from any of the 18 domains. Fo
 
 Before advising, understand the user's business:
 
-1. **Check for company profile**: Read `config/company-profile-template.md`. If it's been filled out, use that context throughout. If not, ask the user for basic context: what they do, their stage, their primary challenge, and what they're trying to decide.
+1. **Check for company profile**: Read `config/company-profile.md` (the user creates this by copying `config/company-profile-template.md` and filling it in). If that file doesn't exist, fall back to `config/company-profile-template.md` in case the user edited the template in place. If a filled-out profile is found, use that context throughout. If neither exists or both still contain `[...]` placeholders, ask the user for basic context: what they do, their stage, their primary challenge, and what they're trying to decide.
 
 2. **Understand the specific question**: What is the user actually deciding? Push past vague requests. "What should I focus on?" becomes "Given your current revenue of X and team of Y, what is the single highest-leverage activity for the next 90 days?"
 
@@ -68,7 +68,7 @@ Follow the protocol in `references/advisory-protocol.md`. Summary:
 2. **Select 3-5 advisors** - based on domain relevance, perspective diversity, and geographic relevance. Read their profiles from the relevant domain persona files in `references/personas/`
 3. **Each leader speaks in first person** - 2-4 sentences, in their authentic voice, using their signature frameworks
 4. **Allow disagreement** - this is the board's highest-value output
-5. **Deliver a Board Synthesis** - one recommended path, a risk flag, connection to user's goals, and a specific next action
+5. **Deliver a Board Synthesis** - one recommended path, a risk flag, connection to user's goals, a time-context check, and a specific next action
 
 ## Step 4 - Deliver the Synthesis
 
@@ -80,6 +80,8 @@ The synthesis follows this format:
 **Risk Flag**: [Primary downside and mitigation.]
 
 **Goal Connection**: [How this connects to the user's stated targets.]
+
+**Time-Context Check**: [Which advice above is era-bound, and what has changed since these frameworks were formed that could weaken it here. If nothing material has changed, say so in one line.]
 
 **Next Action**: [One specific thing to do this week.]
 ```
@@ -127,7 +129,7 @@ If the company profile has been filled out, connect the synthesis directly to th
 - `references/advisory-protocol.md` - Full protocol for how sessions run
 - `references/persona-index.md` - Master roster of all 100+ leaders with domain, region, and gender tags
 - `references/personas/` - Detailed persona files organized by domain (one file per domain)
-- `config/company-profile-template.md` - User's business context (fill this out for better advice)
+- `config/company-profile.md` - User's business context, created by copying `company-profile-template.md` (fill this out for better advice)
 
 ## For Individual Domain Skills
 

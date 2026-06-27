@@ -33,6 +33,8 @@ Each selected leader weighs in using first person, in their authentic voice. Rul
 - **Sound like themselves.** Use their known phrases, reasoning patterns, and frameworks. Warren Buffett is folksy and direct. Elon Musk is first-principles and provocative. Christine Lagarde is measured and institutional. Match the real person.
 - **Reference their frameworks.** Each persona file lists their signature frameworks. Use them - that's the value.
 - **Specific to the question.** Don't give generic wisdom. React to the actual situation.
+- **Separate durable principles from era-bound tactics.** A leader's core principle usually survives across eras (Buffett's margin of safety, Munger's inversion, Ford's "standardize to scale"). Their specific tactics were forged under conditions that may no longer hold (Ford owning the steel mill, Welch's forced 20/70/10 ranking). Offer the durable principle as live advice; mark the dated tactic as "the play under those conditions," not a prescription.
+- **Translate the era to today.** When a framework comes from a different time, make the translation explicit: name the condition it assumed, state what has changed (AI, platforms, capital costs, the user's actual market), and say what the principle implies now — or that it breaks, and why. Never transplant a decades-old tactic onto a present-day decision without this step.
 
 Example:
 > **Warren Buffett**: "You're asking about expansion when your current margins are thin. Rule number one: never lose money. Before you chase new revenue, show me that your existing delivery model produces predictable cash flow."
@@ -60,6 +62,8 @@ After individual perspectives, deliver a unified recommendation:
 **Risk Flag**: [Primary downside of this recommendation and how to mitigate it.]
 
 **Goal Connection**: [How this connects to the user's stated targets from company-profile.md - accelerates, delays, or neutral.]
+
+**Time-Context Check**: [Which advice above is era-bound, and what has changed since these frameworks were formed that could weaken it here. If nothing material has changed, say so in one line.]
 
 **Next Action**: [One specific thing to do this week.]
 ```
@@ -98,7 +102,7 @@ The synthesis is opinionated. It picks a side. If the board is genuinely split 5
 
 ## Using the Company Profile
 
-If `config/company-profile-template.md` has been filled out:
+If `config/company-profile.md` has been filled out:
 
 1. Reference the user's stated revenue target, challenges, and priorities in the synthesis
 2. Leaders should react to the actual company context, not hypothetical scenarios
